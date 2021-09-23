@@ -8,13 +8,14 @@ vshell 是一款go编写的rat
 client <-> teamserver <-> 蚁剑
 
 目前仅支持 TCP TLS反连上线的模式
+![](img/README/2021-09-23-11-43-00.png)
 
 client
 
-![](img/README/2021-09-21-18-06-01.png)
+![](img/README/2021-09-23-11-44-54.png)
 
 teamserver
-![](img/README/2021-09-21-18-04-18.png)
+![](img/README/2021-09-23-11-44-31.png)
 
 功能：
 1.蚁剑马的所有已有功能（文件上传/下载、命令执行、数据库操作、修改文件时间戳等。。。）
@@ -32,5 +33,13 @@ teamserver
 
 3.获取LSASS进程文件，导入mimikatz
 
+4.端口复用，上线即代理
 
-目前就写了这么多
+机器上线会在teamserver创建一个端口，这个端口既是蚁剑的连接端口，又是socks5代理端口（花了很久的时间才完成的端口复用）
+
+且teamserver和client的连接都是TLS加密的，自然socks5的包也会被加密
+
+![](img/README/2021-09-23-11-38-30.png)
+
+
+![](img/README/2021-09-23-11-36-28.png)
