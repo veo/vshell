@@ -29,7 +29,7 @@ teamserver
 ![](img/README/2021-09-21-18-13-59.png)
 2.屏幕截屏
 
-![](img/README/2021-09-21-18-15-18.png)
+![](img/README/2021-09-24-15-31-15.png)
 
 3.获取LSASS进程文件，导入mimikatz
 
@@ -43,3 +43,8 @@ teamserver
 
 
 ![](img/README/2021-09-23-11-36-28.png)
+
+甚至，你可以使用蚁剑控制手机
+
+![](img/README/2021-09-24-15-48-50.png)
+![](img/README/2021-09-24-15-49-23.png)
