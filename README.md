@@ -32,9 +32,13 @@ teamserver
 -MAXPORT                MaxAccess Port  (default 29000)
 ```
 # Note
-client和teamserver通过PWD密码进行鉴权，这个密码同样是蚁剑的连接密码
+client 和 teamserver 通过 PWD 进行鉴权，这个密码同样是蚁剑的连接密码
+
+蚁剑选择 CUSTOM 连接类型
 
 socks5代理需要设置账号密码进行连接，账号密码都是蚁剑密码
+
+其他功能因为还没写蚁剑插件，暂时用不了
 
 # 功能：
 
