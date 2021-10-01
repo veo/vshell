@@ -33,7 +33,10 @@ client <-> teamserver <-> 蚁剑
 
 ## 2.蚁剑插件
 ![](img/README/2021-10-01-15-54-46.png)
+
 ![](img/README/2021-10-01-15-58-58.png)
+
+![](img/README/2021-10-01-16-07-02.png)
 ## 3.参数隐藏（进程名隐藏）（除windows）
 
 进程的参数和名字都会被隐藏，防止被简单的溯源teamserver IP
