@@ -7,6 +7,8 @@ vshell 是一款go编写的rat
 
 client <-> teamserver <-> 蚁剑
 
+蚁剑连接类型 CUSTOM，如乱码编码类型可选GBK
+
 # Options
 ## client
 ```
