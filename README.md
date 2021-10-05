@@ -1,6 +1,6 @@
 # vshell
 
-[English](https://github.com/veo/vbackdoor/blob/main/README_en.md)
+[English](https://github.com/veo/vshell/blob/main/README_en.md)
 
 vshell 是一款go编写的主机管理工具
 
