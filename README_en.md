@@ -47,5 +47,5 @@ ScreenShot, Procdump, HackBrowserData, Memoryrun, socks5 Proxy, Service add
 ## 3.Parameter hiding, process name hiding（not support windows）
 The parameters and names of the process will be hidden to prevent simple traceability to the teamserver IP. The whole process under Darwin will be hidden
 
-#note
+# note
 use replaceteamserverip.sh can change TeamServer IP in program

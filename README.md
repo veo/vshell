@@ -48,7 +48,7 @@ client <-> teamserver <-> 蚁剑
 进程的参数和名字都会被隐藏，防止被简单的溯源teamserver IP，darwin下整个进程会被隐藏
 
 
-#Q/A
+# Q/A
 
 1.如何不用参数启动程序，适用于钓鱼等场景?
 
