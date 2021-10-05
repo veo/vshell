@@ -52,7 +52,7 @@ client <-> teamserver <-> 蚁剑
 
 1.如何不用参数启动程序，适用于钓鱼等场景?
 
-A.查看 replaceteamserverip.sh 你就明白了，TeamServer IP地址被我硬编码在程序里了，直接修改硬编码即可
+A.查看 replaceteamserverip.sh 你就明白了，TeamServer IP地址被我硬编码在程序里了，直接修改硬编码即可，但RPORT和PWD都只能能使用默认不能硬编码修改
 
 2.为什么不放出免杀的版本
 
