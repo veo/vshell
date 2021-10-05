@@ -1,0 +1,17 @@
+{
+  "name": "vshell",
+  "name_en": "vshell",
+  "main": "index.js",
+  "icon": "rocket",
+  "version": "1.0",
+  "description": "vshell中国蚁剑插件",
+  "description_en": "AntSword vshell plugins",
+  "author": {
+    "name": "veo",
+    "email": ""
+  },
+  "category": "vshell蚁剑插件",
+  "category_en": "Default",
+  "multiple": false,
+  "scripts": ["custom"]
+}
