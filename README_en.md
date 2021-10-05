@@ -38,11 +38,7 @@ The database only supports mysql. Too much support will cause the client file to
 ## 2.AntSword Plugins
 
 ScreenShot, Procdump, HackBrowserData, Memoryrun, socks5 Proxy, Service add
-
-![](img/README/2021-10-05-17-26-19.png)
-![](img/README/2021-10-05-17-26-54.png)
-![](img/README/2021-10-05-17-32-10.png)
-![](img/README/2021-10-05-17-32-41.png)
+![](img/README_en/2021-10-05-20-14-50.png)
 
 ## 3.Parameter hiding, process name hiding（not support windows）
 The parameters and names of the process will be hidden to prevent simple traceability to the teamserver IP. The whole process under Darwin will be hidden
