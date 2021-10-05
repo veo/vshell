@@ -1,4 +1,7 @@
 # vshell
+
+[English](https://github.com/veo/vbackdoor/blob/main/README_en.md)
+
 vshell 是一款go编写的主机管理工具
 
 使用蚁剑控制台及插件管理主机
@@ -12,17 +15,19 @@ client <-> teamserver <-> 蚁剑
 # Options
 ## client
 ```
--RHOST                  Team Server IP (default "127.0.0.1")
+-PWD                    PassWord (default "vshell")
+-RHOST                  Team Server IP (default "255.255.255.255")
 -RPORT                  Team Server Port (default "10080")
--PWD                    PassWord (default "veo")
+
 ```
 ## teamserver
 
 ```
 -LPORT                  Listen PORT (default 10080)
--PWD                    PassWord    (default "veo")
--MINPORT                MinAccess Port  (default 28000)
--MAXPORT                MaxAccess Port  (default 29000)
+-MINPORT                MinAccess Port (default 28000)
+-MPORT                  Monitor Port (default 10081)
+-MPWD                   Monitor PassWord (default "veo")
+
 ```
 
 # 功能：
@@ -40,5 +45,15 @@ client <-> teamserver <-> 蚁剑
 ![](img/README/2021-10-05-17-32-41.png)
 
 ## 3.参数隐藏、进程名隐藏（除windows）
-
 进程的参数和名字都会被隐藏，防止被简单的溯源teamserver IP，darwin下整个进程会被隐藏
+
+
+#Q/A
+
+1.如何不用参数启动程序，适用于钓鱼等场景?
+
+A.查看 replaceteamserverip.sh 你就明白了，TeamServer IP地址被我硬编码在程序里了，直接修改硬编码即可
+
+2.为什么不放出免杀的版本
+
+A.功能越多，越不容易免杀，在加了内存执行功能以后就很难免杀了。我可能有一些免杀的方法，但是我放出来以后大家用了估计很快就不免杀了，因此，我上传了原程序没加过壳的，方便大家使用shellcodeLoad或者加壳
