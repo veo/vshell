@@ -60,7 +60,6 @@ client <-> teamserver <-> 蚁剑
 11.管道仿冒技术提权（msf 中的 getsystem）
 12.卸载vshell
 ```
-1.
 ![](img/README/2021-10-05-17-26-19.png)
 ![](img/README/2021-10-05-17-26-54.png)
 ![](img/README/2021-10-12-16-49-35.png)
