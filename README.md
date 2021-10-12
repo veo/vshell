@@ -77,4 +77,4 @@ client <-> teamserver <-> 蚁剑
 
 Q.如何不用参数启动程序，适用于钓鱼等场景?
 
-A.查看 replaceteamserverip.sh 你就明白了，TeamServer IP地址被我硬编码在程序里了，直接修改硬编码即可，但RPORT和PWD都只能能使用默认不能硬编码修改，修改完以后就不需要参数直接双击即可启动程序
+A.查看 replaceteamserverip.sh 你就明白了，TeamServer IP地址被我硬编码在程序里了，直接修改 client_windows_amd64_notupx.exe 的硬编码即可，但RPORT和PWD都只能能使用默认不能硬编码修改，修改完以后就不需要参数直接双击即可启动程序，可以修改完再加upx缩小体积
