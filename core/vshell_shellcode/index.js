@@ -4,12 +4,22 @@ const Base = require("../base");
 const fs = require('fs');
 const LANG = require("../../language"); // 插件语言库
 const LANG_T = antSword["language"]["toastr"]; // 通用通知提示
-class AVList extends Base {
+class Shellcode extends Base {
   createForm(cell) {
     var str = [
       {
         type: "label",
         label: LANG["core"]["vshell_shellcode"]["support"],
+      },
+      {
+        type: "input",
+        name: "windows",
+        label: LANG["core"]["vshell_shellcode"]["form"]["windows"],
+        labelWidth: 100,
+        value: "no",
+        labelAlign:"center",
+        inputWidth: 300,
+        required: true,
       },
       {
         type: "input",
@@ -89,7 +99,7 @@ class AVList extends Base {
       }
     });
     toolbar.loadStruct(
-      '<toolbar><item type="button" id="exploit" text="'+LANG["core"]["vshell_shellcode"]["toolbar"]["run"]+'" img="" /><item type="separator" id="separator" /><item type="buttonSelect" id="method" text="'+LANG["core"]["vshell_shellcode"]["toolbar"]["method"]+'" ><item type="button" id="pe" text="'+LANG["core"]["vshell_shellcode"]["toolbar"]["runexe"]+'" image="" /><item type="button" id="shellcode" text="'+LANG["core"]["vshell_shellcode"]["toolbar"]["runshellcode"]+'" /></item></toolbar>',
+      '<toolbar><item type="button" id="exploit" text="'+LANG["core"]["vshell_shellcode"]["toolbar"]["run"]+'" img="" /><item type="separator" id="separator" /><item type="buttonSelect" id="method" text="'+LANG["core"]["vshell_shellcode"]["toolbar"]["method"]+'" ><item type="button" id="pe" text="'+LANG["core"]["vshell_shellcode"]["toolbar"]["runexe"]+'" image="" /><item type="button" id="shellcode" text="'+LANG["core"]["vshell_shellcode"]["toolbar"]["runshellcode"]+'" /></toolbar>',
       function () {}
     );
     toolbar.disableItem("exploit");
@@ -99,13 +109,15 @@ class AVList extends Base {
     let self = this;
     self.core = this.top.core;
     let args = this.form.getItemValue("args");
+    let windows = this.form.getItemValue("windows");
     const { dialog } = require("electron").remote;
-    var base64data = fs.readFileSync(dialog.showOpenDialog()[0], 'base64');
+    var code = fs.readFileSync(dialog.showOpenDialog()[0], 'hex');
     let data = {
       _: "shellcode",
       "z0" : "pe",
-      "z1" : base64data,
+      "z1" : code,
       "z2" : args,
+      "z3" : windows,
     };
     self.core
       .request(data)
@@ -130,12 +142,14 @@ class AVList extends Base {
     let self = this;
     self.core = this.top.core;
     let args = this.form.getItemValue("args");
-    let base64data = self.editor2.session.getValue();
+    let windows = this.form.getItemValue("windows");
+    let code = self.editor2.session.getValue();
     let data = {
       _: "shellcode",
       "z0" : "shellcode",
-      "z1" : base64data,
+      "z1" : code,
       "z2" : args,
+      "z3" : windows,
     };
     self.core
       .request(data)
@@ -157,4 +171,4 @@ class AVList extends Base {
       });
   }
 }
-module.exports = AVList;
+module.exports = Shellcode;

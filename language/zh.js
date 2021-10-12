@@ -75,7 +75,7 @@ module.exports = {
       msg : "<p>1.分辨率宽度越大，图片越清晰，图片过大会导致连接不稳定</p><p>2.超过1200左右即使数据正常返回，蚁剑也渲染不出来了</p>",
     },
     vshell_procdump: {
-      support : "Support: Windows",
+      support : "支持系统: Windows",
       title: "Procdump",
       form: {
         pid: "PID",
@@ -112,7 +112,7 @@ module.exports = {
     },
     vshell_socks5: {
       support : "支持系统: 所有",
-      title: "Proxy",
+      title: "代理",
       msga: "<p>上线即代理</p>",
       msgb: "<p><b>socks5 代理需要设置账号密码进行连接，账号密码都是：",
     },
@@ -120,10 +120,11 @@ module.exports = {
       title: "漏洞测试",
     },
     vshell_shellcode: {
-      support : "支持系统: 所有",
+      support : "支持系统: Windows",
       title: "内存运行",
       form: {
         args: "参数",
+        windows: "黑窗回显",
       },
       toolbar: {
         method: "运行方式",
@@ -132,7 +133,16 @@ module.exports = {
         runshellcode: "运行ShellCode",
       },
       msga: "<span>如 mimikatz 获取密码参数为：privilege::Debug sekurlsa::logonpasswords exit</br></span>",
-      msgb: "<span>注意：</br>1.运行shellcode也会带上参数，如没有参数请先清空参数内容</br>2.shellcode 运行请输入base64编码后的shellcode（注意是base64编码，不是hex编码）</span>",
+      msgb: "<span>注意：</br>1.运行shellcode也会带上参数，如没有参数请先清空参数内容</br>2.黑窗回显适用于net.exe等需要依托于cmd黑窗才有回显的程序，一般不开启。</br>3.shellcode 运行请输入hex编码后的shellcode</br>4.参数如果不起作用请在参数前面再加上一个字符串和空格，再输入参数（如：a -h）</br>5.此功能可用于上线 Metasploit 或 CobaltStrike等，可绕过杀软直接上线</span>",
     },
+    vshell_other: {
+      support : "支持系统: ALL",
+      title: "其他",
+      toolbar: {
+        remove: "卸载vshell",
+        getsystem: "提权",
+      },
+      msg: "<p>1.卸载当前主机vshell</p><p>2.管道仿冒技术提权（msf 中的 getsystem）</p>",
+    }
   },
 };

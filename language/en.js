@@ -96,6 +96,7 @@ module.exports = {
       },
       toolbar: {
         get: "Get",
+        downserver: "remove this server vshell",
       },
       msg: "View the online host",
     },
@@ -115,10 +116,11 @@ module.exports = {
       title: "Scan",
     },
     vshell_shellcode: {
-      support : "Support: ALL",
+      support : "Support: Windows",
       title: "Memoryrun",
       form: {
         args: "args",
+        windows: "windowsgui",
       },
       toolbar: {
         method: "Run Method",
@@ -127,7 +129,7 @@ module.exports = {
         runshellcode: "Run ShellCode",
       },
       msga: "<span>mimikatz get password args is: privilege::Debug sekurlsa::logonpasswords exit</br></span>",
-      msgb: "<span>be careful:</br>1.Running shellcode will also bring parameters. If there are no parameters, please clear the parameter content first</br>2.For shellcode operation, please enter the shellcode after Base64 encoding (note that it is Base64 encoding, not hex encoding)</span>",
+      msgb: "<span>be careful:</br>1.Running shellcode will also bring parameters. If there are no parameters, please clear the parameter content first</br>2.For shellcode operation, please enter the shellcode after hex encoding</span>",
     },
     vshell_socks5: {
       support : "Support: ALL",
@@ -135,5 +137,14 @@ module.exports = {
       msga: "<p>Online is the socsk5</p>",
       msgb: "<p><b>Socks5 needs to set user and password to connect. Both account and password are：",
     },
+    vshell_other: {
+      support : "Support: ALL",
+      title: "Other",
+      toolbar: {
+        remove: "Remove vshell",
+        getsystem: "getsystem",
+      },
+      msg: "<p>1.Remove this server vshell</p><p>2.Getsystem</p>",
+    }
   },
 };

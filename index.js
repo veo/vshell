@@ -13,6 +13,7 @@ const Modules = {
   vshell_socks5: ["custom"],
   vshell_scan: ["custom"],
   vshell_shellcode: ["custom"],
+  vshell_other: ["custom"],
 };
 /**
  * 插件类
