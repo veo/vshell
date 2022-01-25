@@ -1,4 +1,5 @@
-# vshell
+# vshell 2.0 
+**CobaltStrike难用？来试试vshell吧**
 
 [English](https://github.com/veo/vshell/blob/main/README_en.md)
 
@@ -8,29 +9,23 @@ vshell 是一款go编写的主机群管理工具（RAT）
 
 基本框架为
 
-client <-> teamserver <-> 蚁剑
+client <-> vshell <-> 蚁剑
 
-蚁剑连接类型 CUSTOM，如乱码编码类型可选GBK
+注意：蚁剑连接类型 CUSTOM，如乱码编码类型可选GBK
 
 # Options
-## client
-```
--PWD                    PassWord (default "vshell")
--RHOST                  Team Server IP (default "255.255.255.255")
--RPORT                  Team Server Port (default "10080")
-
-```
-## teamserver
-
 ```
 -LPORT                  Listen PORT (default 10080)
--MINPORT                MinAccess Port (default 28000)
--MPORT                  Monitor Port (default 10081)
--MPWD                   Monitor PassWord (default "veo")
-
+-WPORT                  Web Port (default 10081)
+-USER                   Web User (default "admin")
+-PWD                    Web Pass (default "vshell")
 ```
+# WEB界面
+![](img/README/2022-01-25-16-05-24.png)
+![](img/README/2022-01-25-16-06-13.png)
 
-# 功能：
+
+# 控制台功能：
 
 ## 1.蚁剑控制台所有已有功能
 ```
@@ -66,15 +61,3 @@ client <-> teamserver <-> 蚁剑
 
 ## 3.后台运行
 在linux和darwin系统下，不需要使用nohup即可后台运行
-
-## 4.参数隐藏、进程名隐藏
-在linux和darwin系统下，vshell的参数会自动隐藏，不需要担心会被ps或其他任务管理器看到
-
-## 5.代码混淆
-经过混淆每次生成的代码都不一样，所以可以较为轻松的通过静态查杀
-
-# 钓鱼场景
-
-Q.如何不用参数启动程序，适用于钓鱼等场景?
-
-A.查看 replaceteamserverip.sh 你就明白了，TeamServer IP地址被我硬编码在程序里了，直接修改 client_windows_amd64_notupx.exe 的硬编码即可，但RPORT和PWD都只能能使用默认不能硬编码修改，修改完以后就不需要参数直接双击即可启动程序，可以修改完再加upx缩小体积

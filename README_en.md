@@ -1,33 +1,30 @@
-# vshell
+# vshell 2.0
+**Is cobaltstrike hard to use? Let's try vshell**
+
 vshell is a Remote Administation tool written in Go (RAT)
 
 use [AntSword](https://github.com/AntSwordProject/antSword) control host
 
 The basic framework is
 
-client <-> teamserver <-> AntSword
+client <-> vshell <-> AntSword
 
-AntSword Shell type choose CUSTOM
+notes: AntSword Shell type choose CUSTOM
 
 # Options
-## client
-```
--PWD                    PassWord (default "vshell")
--RHOST                  Team Server IP (default "255.255.255.255")
--RPORT                  Team Server Port (default "10080")
-
-```
-## teamserver
-
 ```
 -LPORT                  Listen PORT (default 10080)
--MINPORT                MinAccess Port (default 28000)
--MPORT                  Monitor Port (default 10081)
--MPWD                   Monitor PassWord (default "veo")
-
+-WPORT                  Web Port (default 10081)
+-USER                   Web User (default "admin")
+-PWD                    Web Pass (default "vshell")
 ```
 
-# 功能：
+# WEB
+![](img/README/2022-01-25-16-05-24.png)
+![](img/README/2022-01-25-16-06-13.png)
+
+
+# Function：
 
 ## 1.AntSword main function
 
