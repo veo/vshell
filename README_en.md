@@ -19,7 +19,7 @@ notes: AntSword Shell type choose CUSTOM
 -PWD                    Web Pass (default "vshell")
 ```
 
-# WEB
+# WEB UI
 ![](img/README/2022-01-25-16-05-24.png)
 ![](img/README/2022-01-25-16-06-13.png)
 
@@ -37,8 +37,3 @@ The database only supports mysql. Too much support will cause the client file to
 ScreenShot, Procdump, HackBrowserData, Memoryrun, socks5 Proxy, Service add
 ![](img/README_en/2021-10-05-20-14-50.png)
 
-## 3.Parameter hiding, process name hiding（not support windows）
-The parameters and names of the process will be hidden to prevent simple traceability to the teamserver IP. The whole process under Darwin will be hidden
-
-# note
-use replaceteamserverip.sh can change TeamServer IP in program

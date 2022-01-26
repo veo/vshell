@@ -55,9 +55,8 @@ client <-> vshell <-> 蚁剑
 11.管道仿冒技术提权（msf 中的 getsystem）
 12.卸载vshell
 ```
-![](img/README/2021-10-05-17-26-19.png)
 ![](img/README/2021-10-05-17-26-54.png)
 ![](img/README/2021-10-12-16-49-35.png)
 
 ## 3.后台运行
-在linux和darwin系统下，不需要使用nohup即可后台运行
+所有版本直接运行即可后台运行
