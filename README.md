@@ -21,9 +21,8 @@ client <-> vshell <-> 蚁剑
 -PWD                    Web Pass (default "vshell")
 ```
 # WEB界面
-![](img/README/2022-01-25-16-05-24.png)
-![](img/README/2022-01-25-16-06-13.png)
-
+![](img/README/2022-01-28-03-23-49.png)
+![](img/README/2022-01-28-03-24-23.png)
 
 # 控制台功能：
 
