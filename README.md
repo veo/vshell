@@ -1,61 +1,37 @@
-# vshell 2.0 
+# vshell 3.0 
 **CobaltStrike难用？来试试vshell吧**
 
-[English](https://github.com/veo/vshell/blob/main/README_en.md)
 
 vshell 是一款go编写的主机群管理工具（RAT）
 
-使用蚁剑控制台及插件管理主机
+# 改动
+1.之前版本是自写协议，但有众多问题不稳定容易掉线。后续彻底放弃采用 [NPS](https://github.com/ehang-io/nps) 的协议，现在已经非常稳定不会掉线，
 
-基本框架为
+2.现在支持TCP，UDP/KCP 协议上线
 
-client <-> vshell <-> 蚁剑
+3.逐步弃用蚁剑连接的方式，直接使用web管理主机，目前还可以使用蚁剑连接 （注意：蚁剑连接类型 CUSTOM，如乱码编码类型可选GBK）
 
-注意：蚁剑连接类型 CUSTOM，如乱码编码类型可选GBK
 
-# Options
-```
--LPORT                  Listen PORT (default 10080)
--WPORT                  Web Port (default 10081)
--USER                   Web User (default "admin")
--PWD                    Web Pass (default "vshell")
-```
 # WEB界面
-![](img/README/2022-01-28-03-23-49.png)
-![](img/README/2022-01-28-03-24-23.png)
+![](img/README/web.png)
+# 功能：
 
-# 控制台功能：
-
-## 1.蚁剑控制台所有已有功能
+## 1.Vshell功能
 ```
-1.文件上传/下载
-2.文件复制/粘贴/预览/新建/删除
-2.控制台编辑文件
-3.虚拟终端
-4.数据库操作（暂时只支持mysql）
-5.修改文件时间戳
-6.WGET下载
-...
+1.文件管理
+2.交互式虚拟终端
+3.旧版vshell蚁剑连接的功能
+功能陆续添加中...
 ```
+![img.png](img/README/terminal.png)
+![](img/README/filemanager.png)
 
 
-## 2.蚁剑插件 vshell
+## 2.NPS代理功能
 ```
-1.基本信息
-2.主机列表
-3.杀软识别
-4.开机启动服务管理
-5.屏幕截图
-6.Procdump
-7.浏览器数据获取
-8.socks5代理（上线即代理，不需要额外配置）
-9.漏洞测试
-10.内存运行（支持exe和shellcode两种模式，支持内存上线 Metasploit 或 CobaltStrike等，支持运行mimikatz）
-11.管道仿冒技术提权（msf 中的 getsystem）
-12.卸载vshell
+支持NPS的所有已有的功能
 ```
-![](img/README/2021-10-05-17-26-54.png)
-![](img/README/2021-10-12-16-49-35.png)
 
-## 3.后台运行
-所有版本直接运行即可后台运行
+## 3.服务端直接生成客户端
+![](img/README/download.png)
+可以使用服务端直接生成客户端，客户端不需要任何参数和配置文件即可运行
