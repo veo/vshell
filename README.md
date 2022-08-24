@@ -8,7 +8,7 @@ vshell 是一款go编写的主机群管理工具（RAT）
 通讯默认使用tls证书进行加密
 
 ## Features
-![](img/README/web.png)
+![](img/README/web.jpg)
 
 ### 1.管理功能
 ```
@@ -29,7 +29,7 @@ vshell 是一款go编写的主机群管理工具（RAT）
 
 ### 3.服务端直接生成客户端
 可以使用服务端直接生成客户端，客户端不需要任何参数和配置文件即可运行
-![](img/README/download.png)
+![](img/README/download.jpg)
 
 
 # Licenses
