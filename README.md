@@ -21,15 +21,25 @@ vshell 是一款go编写的主机群管理工具（RAT）
 ![](img/README/terminal.png)
 ![](img/README/filemanager.png)
 
+### 2.服务端直接生成客户端
+可以使用服务端直接生成客户端，客户端不需要任何参数和配置文件即可运行
 
-### 2.NPS代理功能
+客户端支持
+
+stager 小体积客户端（C/C++ 几十K到几百K）
+
+stagerless 大体积客户端 （golang编写，经过upx压缩，有5-6M）
+
+windows shellcode
+
+![](img/README/download.jpg)
+![](img/README/type.jpg)
+
+### 3.NPS代理功能
 
 支持NPS的所有已有的代理功能，直接在WEB端设置代理即可
 ![](img/README/proxy.png)
 
-### 3.服务端直接生成客户端
-可以使用服务端直接生成客户端，客户端不需要任何参数和配置文件即可运行
-![](img/README/download.jpg)
 
 
 # Licenses
