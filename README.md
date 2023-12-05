@@ -2,7 +2,7 @@
   <img src="img/logo.png" alt="vshell" width="200px">
   <br>
 </h1>
-<p align="center">vshell 是一款go编写的主机群管理工具（RAT）</p>
+<p align="center">vshell 是一款go编写的主机群管理工具（C2）</p>
 
 <p align="center">
 <a href="https://github.com/veo/vshell/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>
