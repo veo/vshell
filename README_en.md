@@ -4,8 +4,8 @@
 vshell is a Remote Administation tool written in Go (RAT)
 
 # WEB UI
-![](img/README/web.png)
-![](img/README/filemanager.png)
-![](img/README/terminal.png)
+![](img/web.jpg)
+![](img/filemanager.png)
+![](img/terminal.png)
 
 
