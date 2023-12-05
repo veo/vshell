@@ -25,7 +25,7 @@
 4.无需特殊运行环境，服务端单一文件运行
 5.支持Windows shellcode客户端
 6.超快的代理功能
-7.支持多种格式的插件（exe、.net、elf、dll、so、dylib）
+7.支持内存运行多种格式的插件（exe、.net、elf、dll、so、dylib）
 8.支持WebSocket CDN中转
 9.支持正、反向连接的客户端
 10.支持代理上线、代理链
