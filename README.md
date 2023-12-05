@@ -13,12 +13,23 @@
 # Features
 
 <h1 align="center">
-  <img src="img/web.jpg" alt="vscan" width="850px"></a>
+  <img src="img/web.jpg" alt="vshell" width="850px"></a>
   <br>
 </h1>
 
+### 1.特性
+```
+1.支持ebpf客户端的C2
+2.完美的交互式虚拟终端
+3.超快的代理功能
+4.支持多种格式的插件（exe、.net、elf、dll、so、dylib）
+5.支持WebSocket CDN中转
+6.支持正、反向连接
+7.支持代理上线、代理链
+```
 
-## 流量
+
+### 2.流量
 支持TCP，UDP/KCP，WebSocket 协议
 
 WebSocket 协议支持使用 CDN 中转
@@ -26,7 +37,7 @@ WebSocket 协议支持使用 CDN 中转
 通讯默认使用自定义盐进行加密
 
 
-### 1.管理功能
+### 3.管理功能
 ```
 1.文件管理
 2.交互式虚拟终端，Linux、MacOS、Windows都支持交互
@@ -39,7 +50,7 @@ WebSocket 协议支持使用 CDN 中转
 ![](img/filemanager.jpg)
 ![](img/plugin.jpg)
 
-### 2.服务端直接生成客户端
+### 4.服务端直接生成客户端
 可以使用服务端直接生成客户端，客户端不需要任何参数和配置文件即可运行
 
 客户端支持四种类型，网页内含使用说明
@@ -50,10 +61,9 @@ Stagerless反向客户端
 ebpf正向客户端
 ```
 
-
 ![](img/client.jpg)
 
-### 3.NPS代理功能
+### 5.NPS代理功能
 
 支持NPS的所有已有的代理功能，直接在WEB端设置代理即可
 ![](img/proxy.jpg)
