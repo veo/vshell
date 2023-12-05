@@ -35,8 +35,9 @@ WebSocket 协议支持使用 CDN 中转
 5.添加开机启动
 6.NPS代理
 ```
-![](img/terminal.png)
-![](img/filemanager.png)
+![](img/terminal.jpg)
+![](img/filemanager.jpg)
+![](img/plugin.jpg)
 
 ### 2.服务端直接生成客户端
 可以使用服务端直接生成客户端，客户端不需要任何参数和配置文件即可运行
@@ -55,7 +56,7 @@ ebpf正向客户端
 ### 3.NPS代理功能
 
 支持NPS的所有已有的代理功能，直接在WEB端设置代理即可
-![](img/proxy.png)
+![](img/proxy.jpg)
 
 
 # Licenses
