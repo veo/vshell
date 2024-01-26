@@ -33,7 +33,7 @@
 
 
 ### 2.流量
-支持TCP，UDP/KCP，WebSocket 协议
+支持TCP、UDP/KCP、WebSocket、DNS、DOH、DOT 协议
 
 WebSocket 协议支持使用 CDN 中转
 
