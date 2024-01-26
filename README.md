@@ -84,8 +84,7 @@ ebpf正向客户端
 
 # 微信交流群
 
-![img.png](img/weixin.png)
-
+<img src="img/weixin.png" alt="starfile" width="500px">
 
 # 安恒星火实验室
 
