@@ -2,7 +2,7 @@
   <img src="img/logo.png" alt="vshell" width="200px">
   <br>
 </h1>
-<p align="center">vshell 是一款主机群管理工具（C2）</p>
+<p align="center">安全对抗模拟、红队工具</p>
 
 <p align="center">
 <a href="https://github.com/veo/vshell/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>
@@ -10,88 +10,67 @@
 <a href="https://github.com/veo/vshell/releases"><img src="https://img.shields.io/github/downloads/veo/vshell/total?color=blueviolet"></a>
 </p>
 
-# Features
 
-<h1 align="center">
-  <img src="img/web.jpg" alt="vshell" width="850px"></a>
-  <br>
-</h1>
+### 一、为什么选择 vshell
 
-### 1.特性
+vshell 为您提供隧道代理和隐蔽通道，以模拟网络中的持久化攻击行为。支持多种协议、高兼容性、及强大的协作能力，帮助蓝队更好的评估安全设备水平，提高应急响应能力。
+
+### 二、使命
+
+缩小渗透测试工具和高级威胁恶意软件之间的差距。
+
+### 三、愿景
+
+通过合法合规的攻防演练、红蓝对抗：
+- (1) 培养高水平的安全工程师
+- (2) 推动网络安全水平的进步
+- (3) 向安全专业人员提供高级威胁策略和培训
+
+### 四、法律合规声明
+
+vshell致力于通过合法、合规、负责任、符合道德的方式执行自身使命和愿景。
+
+为履行这一承诺：
+- (1) 制定了明确的产品控制限制
+- (2) 会仔细审查客户身份和每项产品需求，以确保遵守法律
+
+
+### 五、产品控制声明
+
+从功能上来说，vshell和它模拟的高级威胁恶意软件行为一样，随着互联网传播，此产品的双重功能成为了一个挑战。vshell的目标是确保成为一股为安全专业人员提供支持的正义力量。
+
+为实现这一目标，制定了一些流程和限制措施：
+- (1) 仅将正式版产品交给仅将产品用于合法合规渗透测试目的的安全专业人员
+- (2) 限制客户端数量、限制高级功能，降低对非法从业者的吸引力
+- (3) 使用许可证防止产品不受限制的扩散
+
+
+## 产品功能
+
+vshell 被广泛用于红队演练和对抗模拟中，模拟长期潜伏的攻击者的策略和技术。
 ```
-1.支持ebpf客户端的C2 (演示视频：https://www.bilibili.com/video/BV1Vw411t78a)
-2.完美的交互式虚拟终端
-3.无需编译环境，服务端直接生成客户端
-4.无需特殊运行环境，服务端单一文件运行
-5.支持Windows shellcode客户端
-6.超快的代理功能
-7.支持内存运行多种格式的插件（exe、.net、elf、dll、so、dylib）
-8.支持WebSocket CDN中转
-9.支持正、反向连接的客户端
-10.支持代理上线、代理链
-```
-
-
-### 2.流量
-支持TCP、UDP/KCP、WebSocket、DNS、DOH、DOT 协议
-
-WebSocket 协议支持使用 CDN 中转
-
-通讯默认使用自定义盐进行加密
-
-
-### 3.管理功能
-```
-1.文件管理
-2.交互式虚拟终端，Linux、MacOS、Windows都支持交互
-3.屏幕截屏
-4.自定义插件运行
-5.添加开机启动
-6.NPS代理
-```
-![](img/terminal.jpg)
-![](img/filemanager.jpg)
-![](img/plugin.jpg)
-
-### 4.服务端直接生成客户端
-可以使用服务端直接生成客户端，客户端不需要任何参数和配置文件即可运行
-
-客户端支持四种类型，网页内含使用说明
-```
-Stager反向客户端
-Stagerless反向客户端
-正向客户端
-ebpf正向客户端
+1.支持多种协议的隐蔽通道（TCP、UDP/KCP、WebSocket、DNS、DOH、DOT）
+2.支持文件管理、终端、屏幕截屏、开机启动等管理功能
+3.支持内存运行多种格式的插件（exe、.net、elf、dll、so、dylib）
+4.支持多种协议的隧道代理
+5.支持正、反向连接模式，支持代理上线
+6.支持Windows shellcode客户端
+7.支持域名上线、CDN上线
+8.支持ebpf客户端穿透防火墙 (演示视频：https://www.bilibili.com/video/BV1Vw411t78a)
 ```
 
-![](img/client.jpg)
+## 产品预览
 
-客户端介绍
-![](img/description.jpg)
+部分展示，完整功能预览可使用试用版
 
-### 5.NPS代理功能
+###仪表盘-切换主题
 
-支持NPS的所有已有的代理功能，直接在WEB端设置代理即可
-![](img/proxy.jpg)
+![main.png](img/main.png)
+![theme.png](img/theme.png)
 
+###客户端生成
+![client.png](img/client.png)
 
-# Licenses
-本工具仅面向合法授权的企业管理行为，在使用本工具进行主机管理时，您应确保该行为符合当地的法律法规，并且已经取得了足够的授权。
-
-如您在使用本工具的过程中存在任何非法行为，您需自行承担相应后果，作者将不承担任何法律及连带责任。
-
-在使用本工具前，请您务必审慎阅读、充分理解各条款内容，限制、免责条款或者其他涉及您重大权益的条款可能会以加粗、加下划线等形式提示您重点注意。 除非您已充分阅读、完全理解并接受本协议所有条款，否则，请您不要使用本工具。您的使用行为或者您以其他任何明示或者默示方式表示接受本协议的，即视为您已阅读并同意本协议的约束。
-
-# 微信交流群
-
-<img src="img/weixin.png" alt="starfile" width="500px">
-
-# 安恒星火实验室
-
-<h1 align="center">
-  <img src="img/starfile.jpeg" alt="starfile" width="200px">
-  <br>
-</h1>
-专注于实战攻防与研究，研究涉及实战攻防、威胁情报、攻击模拟与威胁分析等，团队成员均来自行业具备多年实战攻防经验的红队、蓝队和紫队专家。本着以攻促防的核心理念，通过落地 ATT&CK 攻防全景知识库，全面构建实战化、常态化、体系化的企业安全建设与运营。
-
-
+###主机管理
+![manager.png](img/manager.png)
+![terminal.png](img/terminal.png)
