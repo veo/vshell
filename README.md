@@ -1,19 +1,25 @@
 <h1 align="center">
-  <img src="img/logo.png" alt="vshell" width="200px">
+  <img src="img/logo.png" alt="vshell" width="120px">
   <br>
+  <p align="center">VSHELL</p>
 </h1>
 <p align="center">安全对抗模拟、红队工具</p>
 
 <p align="center">
-<a href="https://github.com/veo/vshell/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>
-<a href="https://github.com/veo/vshell/releases"><img src="https://img.shields.io/github/release/veo/vshell"></a>
-<a href="https://github.com/veo/vshell/releases"><img src="https://img.shields.io/github/downloads/veo/vshell/total?color=blueviolet"></a>
+<a href="https://github.com/veo/vshell/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt=""></a>
+<a href="https://github.com/veo/vshell/releases"><img src="https://img.shields.io/github/release/veo/vshell" alt=""></a>
+<a href="https://github.com/veo/vshell/releases"><img src="https://img.shields.io/github/downloads/veo/vshell/total?color=blueviolet" alt=""></a>
 </p>
 
-
-### 一、为什么选择 vshell
-
-vshell 为您提供隧道代理和隐蔽通道，以模拟网络中的持久化攻击行为。支持多种协议、高兼容性、及强大的协作能力，帮助蓝队更好的评估安全设备水平，提高应急响应能力。
+<div style="display: flex; justify-content: space-between;">
+    <div style="margin-top: 5%; width: 40%;">
+        <img src="img/main.png" alt="img/main.png">
+    </div>
+    <div style="width: 50%;">
+        <h2>为什么选择 vshell</h2>
+        <p>vshell 为您提供隧道代理和隐蔽通道，以模拟网络中的持久化攻击行为。支持多种协议、高兼容性、及强大的协作能力，帮助蓝队更好的评估安全设备水平，提高应急响应能力。</p>
+    </div>
+</div>
 
 ### 二、使命
 
@@ -45,7 +51,7 @@ vshell致力于通过合法、合规、负责任、符合道德的方式执行�
 - (3) 使用许可证防止产品不受限制的扩散
 
 
-## 产品功能
+### 六、产品功能
 
 vshell 被广泛用于红队演练和对抗模拟中，模拟长期潜伏的攻击者的策略和技术。
 ```
@@ -59,18 +65,3 @@ vshell 被广泛用于红队演练和对抗模拟中，模拟长期潜伏的攻�
 8.支持ebpf客户端穿透防火墙 (演示视频：https://www.bilibili.com/video/BV1Vw411t78a)
 ```
 
-## 产品预览
-
-部分展示，完整功能预览可使用试用版
-
-### 仪表盘-切换主题
-
-![main.png](img/main.png)
-![theme.png](img/theme.png)
-
-### 客户端生成
-![client.png](img/client.png)
-
-### 主机管理
-![manager.png](img/manager.png)
-![terminal.png](img/terminal.png)
