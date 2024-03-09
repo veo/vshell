@@ -68,9 +68,11 @@ vshell致力于通过合法、合规、负责任、符合道德的方式执行�
 <h2>授权获取</h2>
 目前 vshell 还没有商用，可公开获取的许可证皆为试用版，都有限制控制。
 
-如有合法合规的商务合作需求，可以联系我
+如有商务合作需求，可以联系我
 
-微信交流群：
+<p align="center">
+    <p>微信交流群</p>
+    <img src="img/wx.png" alt="wx" width="150px">
+<p>
 
-<img src="img/wx.png" alt="wx" width="150px">
 
