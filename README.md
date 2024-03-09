@@ -13,7 +13,7 @@
 
 # Features
 <h1 align="center">
-  <img src="img/main.png" alt="img/main.png"  width="80%">
+  <img src="img/main.png" alt="img/main.png"  width="95%">
   <br>
 </h1>
 
