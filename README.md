@@ -11,15 +11,15 @@
 <a href="https://github.com/veo/vshell/releases"><img src="https://img.shields.io/github/downloads/veo/vshell/total?color=blueviolet"></a>
 </p>
 
-<div style="display: flex; justify-content: space-between;">
-    <div style="margin-top: 3%; width: 40%;">
-        <img src="img/main.png" alt="img/main.png">
-    </div>
-    <div style="width: 50%;">
-        <h2>为什么选择 vshell</h2>
-        <p>vshell 为您提供隧道代理和隐蔽通道，以模拟网络中的持久化攻击行为。支持多种协议、高兼容性、及强大的协作能力，帮助蓝队更好的评估安全设备水平，提高应急响应能力。</p>
-    </div>
-</div>
+# Features
+<h1 align="center">
+  <img src="img/main.png" alt="img/main.png"  width="700px">
+  <br>
+</h1>
+
+
+<h2>为什么选择 vshell</h2>
+vshell 为您提供隧道代理和隐蔽通道，以模拟网络中的持久化攻击行为。支持多种协议、高兼容性、及强大的协作能力，帮助蓝队更好的评估安全设备水平，提高应急响应能力
 
 <h2>产品功能</h2>
 
