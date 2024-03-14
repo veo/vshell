@@ -73,7 +73,7 @@ vshell致力于通过合法、合规、负责任、符合道德的方式执行�
 微信交流群二维码
 </p>
 <p align="center">
-<img src="img/weixin.png" alt="wx" width="150px">
+<img src="img/weixin.jpg" alt="wx" width="150px">
 </p>
 
 
