@@ -13,7 +13,7 @@
 
 # :warning:Warning
 
-### :warning:vshell 将无限期停止更新和停止发放试用授权，具体情况可阅读 [说明](WARNING.md)
+### :warning:vshell 将无限期停止更新和停止发放试用授权，所以此工具无法再使用。具体情况可阅读 [说明](WARNING.md)
 
 # Features
 
