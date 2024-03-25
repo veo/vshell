@@ -11,9 +11,9 @@
 <a href="https://github.com/veo/vshell/releases"><img src="https://img.shields.io/github/downloads/veo/vshell/total?color=blueviolet"></a>
 </p>
 
-# :warning: Warning
+# :warning:Warning
 
-### vshell 将无限期停止更新和停止发放试用授权，具体情况可阅读 [说明](WARNING.md)
+### <font color='red'>vshell 将无限期停止更新和停止发放试用授权</font>，具体情况可阅读 [说明](WARNING.md)</font>
 
 # Features
 
