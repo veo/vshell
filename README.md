@@ -13,7 +13,7 @@
 
 # :warning:Warning
 
-### <font color='red'>vshell 将无限期停止更新和停止发放试用授权</font>，具体情况可阅读 [说明](WARNING.md)</font>
+### <span style="color:red">vshell 将无限期停止更新和停止发放试用授权</span>，具体情况可阅读 [说明](WARNING.md)</font>
 
 # Features
 
@@ -75,16 +75,3 @@ vshell致力于通过合法、合规、负责任、符合道德的方式执行�
 - (1) 仅将正式版产品交给仅将产品用于合法合规渗透测试目的的安全专业人员
 - (2) 限制客户端数量、限制高级功能，降低对非法从业者的吸引力
 - (3) 使用许可证防止产品不受限制的扩散
-
-<h2>授权获取</h2>
-
-目前 vshell 还没有商用，可公开获取的许可证皆为试用版，都有限制控制。
-
-如有商务合作需求，可以联系我
-
-<p align="center">
-微信交流群二维码
-</p>
-<p align="center">
-<img src="img/weixin.jpg" alt="wx" width="300px">
-</p>
