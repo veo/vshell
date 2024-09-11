@@ -40,7 +40,7 @@ vshell 为您提供隧道代理和隐蔽通道，以模拟网络中的持久化�
 vshell 被广泛用于红蓝攻防演练演练和对抗模拟中，模拟长期潜伏攻击者的策略和技术。
 
 ```
-1.支持多种协议的隐蔽通道（TCP、UDP/KCP、WebSocket、DNS、DOH、DOT）
+1.支持多种协议的隐蔽通道（TCP、UDP/KCP、WebSocket、DNS、DOH、DOT、OSS）
 2.支持文件管理、终端、屏幕截屏、开机启动等管理功能
 3.支持内存运行多种格式的插件（exe、.net、elf、dll、so、dylib）
 4.支持多种协议的隧道代理
